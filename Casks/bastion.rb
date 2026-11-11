@@ -9,10 +9,11 @@ cask "bastion" do
 
   depends_on arch: :arm64
   depends_on macos: :ventura
+  # The CLI and the server come from the formula, so they are on the path once.
+  depends_on formula: "tacoda/bastion/bastion"
 
   app "Bastion.app"
-  binary "#{appdir}/Bastion.app/Contents/MacOS/bastion"
-  binary "#{appdir}/Bastion.app/Contents/MacOS/bastion-server"
+  binary "#{appdir}/Bastion.app/Contents/MacOS/bastion-desktop"
 
   caveats <<~TEXT
     Bastion.app is not signed with a Developer ID yet. Install it with

@@ -2,7 +2,7 @@
 
 ```sh
 brew install tacoda/bastion/bastion                     # the server and the CLI
-brew install --cask --no-quarantine tacoda/bastion/bastion  # Bastion.app, which holds them too
+brew install --cask --no-quarantine tacoda/bastion/bastion  # Bastion.app, and bastion-desktop on the path
 ```
 
 Bastion's stack runs on iii 0.25.0, installed on its own. The app is not signed
